@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    font-family: 'Freesentation-9Black';
+    font-size: medium;
+    color: white; /* 폰트 색상을 흰색으로 변경 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 150%;
+    color: brown;
+}
+.inline {
+    display: inline;
+}
+.text-container {
+    text-align: center;
+    font-size: 120%;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100px; /* 너비 축소 */
+    height: 150px; /* 높이 축소 */
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    margin: 0 5px; /* 간격 축소 */
+    border-radius: 10px;
+}
+
+.time {
+    padding-top: 5%;
+    font-size: 60%; /* 폰트 크기 축소 */
+    text-align: center; 
+}
+.tmp {
+    font-size: 60%; /* 폰트 크기 축소 */
+    text-align: center; 
+}
+.sky {
+    display: block; 
+    margin: auto; 
+    max-width: 50%; /* 이미지 크기 축소 */
+    max-height: 50%; /* 이미지 크기 축소 */
+}
+.pop {
+    font-size: 50%; /* 폰트 크기 축소 */
+    text-align: center;
+}
+.wsd-container {
+    padding: 5% 0 0 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.wind {
+    padding: 5% 0 0 5%;
+    width: 15%; /* 이미지 크기 축소 */
+}
+.wsd {
+    margin-left: 5px; /* 간격 축소 */
+    font-size: 50%; /* 폰트 크기 축소 */
+    text-align: center;
+}
+.reh-container {
+    padding: 5% 0 5% 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+.humidity {
+    padding: 5% 0 0 5%;
+    width: 15%; /* 이미지 크기 축소 */
+}
+.reh {
+    margin-left: 5px; /* 간격 축소 */
+    font-size: 50%; /* 폰트 크기 축소 */
+    text-align: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+        flex-direction: row; /* 카드 가로 나열 */
+        flex-wrap: wrap; /* 내용이 넘칠 경우 다음 줄로 이동 */
+        justify-content: space-around; /* 카드 사이의 간격을 균등하게 조정 */
+    }
+
+    .card {
+        width: 30%; /* 카드의 너비를 화면의 30%로 조정하여 한 줄에 3개가 들어가도록 함 */
+        height: auto; /* 카드의 높이를 내용에 맞게 조정 */
+        margin-bottom: 20px; /* 카드 사이의 간격을 조정 */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: small; /* 모바일 환경에서 폰트 크기를 줄임 */
+    }
+
+    h1 {
+        font-size: 100%; /* 모바일 환경에서 제목의 크기를 줄임 */
+    }
+
+    .card-container {
+        flex-direction: column; /* 모바일 환경에서는 카드들이 세로로 나열되도록 함 */
+        align-items: center; /* 카드들을 가운데 정렬함 */
+    }
+
+    .card {
+        width: 80%; /* 모바일 환경에서는 카드의 너비를 화면에 맞춤 */
+        height: auto; /* 카드의 높이를 내용에 맞게 조정 */
+        margin-bottom: 10px; /* 카드 사이의 간격을 조정 */
+   
